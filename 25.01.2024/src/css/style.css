@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.table {
+    padding-inline: 30px;
+}
+
+.table__header {
+    margin-top: 35px;
+    border-bottom: 2px solid rgb(54, 54, 54);
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 4fr;
+    align-items: center;
+    text-align: center;
+}
+
+.table__header-item {
+    padding-bottom: 7px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.table__body-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 4fr;
+    align-items: center;
+    text-align: center;
+}
+
+.table__body-item-description {
+    text-align: center; 
+    padding: 7px 0;
+    border-bottom: 1px solid rgb(85, 85, 85);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.table__body-item-description:last-child {
+    color: transparent;
+}
+
+.message {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.message__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.message__order-clothes {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.deactiveted {
+    display: none;
+}
