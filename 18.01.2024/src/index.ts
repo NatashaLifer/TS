@@ -9,15 +9,15 @@
 
 // const checkMaxValue: number[] = [1, 2, 3, 4, 5, 6, 7]
 // findMaxValue(1, 2, 3, 4, 5, 6, 7, 8, 9, 10,1234,45,456,6,7,657,657,56,578,768,68,869,89,879,7,0,98,0)
-function findMaxValue(...allNumbers: number[]): number {
-    let max: number = allNumbers[0]
-    for (let i = 0; i < allNumbers.length; i++){
-        if(allNumbers[i] > max) {
-            max = allNumbers[i]
-        }
-    }
-    return max
-}
+// function findMaxValue(...allNumbers: number[]): number {
+//     let max: number = allNumbers[0]
+//     for (let i = 0; i < allNumbers.length; i++){
+//         if(allNumbers[i] > max) {
+//             max = allNumbers[i]
+//         }
+//     }
+//     return max
+// }
 // console.log(findMaxValue(1, 2, 3, 4, 5, 6, 7, 8, 9, 10,1234,45,456,6,7,657,657,56,578,768,68,869,89,879,7,0,98,0));
 
 
@@ -26,20 +26,20 @@ function findMaxValue(...allNumbers: number[]): number {
 З масиву чисел виберіть парні числа та обчисліть їх суму.*/
 // const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // checkMaxValue(1, 2, 3, 4, 5, 6, 7, 8, 9, 10,1234,45,456,6,7,657,657,56,578,768,68,869,89,879,7,0,98,0)
-const evenSum = (): number => {
-    let result: number = 0
+// const evenSum = (): number => {
+//     let result: number = 0
   
-    const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+//     const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   
-    result = numbers.reduce((acc: number, e: number) => {
-        if (e % 2 === 0) {
-        acc += e
-        }
-        return acc
-    }, 0)
+//     result = numbers.reduce((acc: number, e: number) => {
+//         if (e % 2 === 0) {
+//         acc += e
+//         }
+//         return acc
+//     }, 0)
   
-    return result
-}
+//     return result
+// }
 
 /* TASK - 2
  
@@ -47,18 +47,18 @@ const evenSum = (): number => {
 Елементи в рядку користувача можуть повторюватись.
 Рядок користувача потрібно перетворити в масив з унікальними значеннями.
 */
-const usersName: string = 'Nastya, Vova, Valeriy, Dima, Oleg, Sergiy, Valeriy, Nastya'
+// const usersName: string = 'Nastya, Vova, Valeriy, Dima, Oleg, Sergiy, Valeriy, Nastya'
 
-function getItemList(usersName: string): string[] {
-    let arrayUsers: string[] = usersName.split(', ')
-    let uniqNames: string[] = arrayUsers.filter((item: string, index: number) => {
-        let indexMainArray:number = arrayUsers.indexOf(item)
+// function getItemList(usersName: string): string[] {
+//     let arrayUsers: string[] = usersName.split(', ')
+//     let uniqNames: string[] = arrayUsers.filter((item: string, index: number) => {
+//         let indexMainArray:number = arrayUsers.indexOf(item)
         
-        return indexMainArray === index
-    }) 
-    return uniqNames
+//         return indexMainArray === index
+//     }) 
+//     return uniqNames
     
-}
+// }
 // console.log(getItemList(usersName));
 
 
@@ -139,10 +139,4 @@ function showConsoleUsers(users: User[], pet: string | null, ageMin?: number): v
 showConsoleUsers(userList, 'cat')
 showConsoleUsers(userList, 'dog')
 showConsoleUsers(userList, null, 18)
-
-
-
-
-
-
 

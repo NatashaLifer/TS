@@ -23,7 +23,7 @@
 
 // import { Size, Clothes, PriceMark } from './types'
 // import { CardComponent } from './CardComponent'
-// import './stickPrice'
+// import 'stickPrice'
 // import {stickPrice} from './stickPrice'
 
 enum Size {
@@ -233,7 +233,7 @@ chengePriceforSale(newClothes, 'Sweater', 10)
 function checkAvailableAllSizes(clothes: Clothes[]): void {
 
     let structuredGoods: Clothes[][] = []
-    let names = Array.from(new Set(clothes.map(elem => elem.name)))
+    let names = Array.from(new Set(clothes.map(elem => elem.name))) 
 
     names.forEach((elem, index) => {
 	structuredGoods[index] = clothes.filter(element => element.name == elem)
@@ -283,7 +283,7 @@ const CardComponent = (data: Clothes[], parent: HTMLElement): void => {
         clothesCount.textContent = `${item.count}`
         
         if (clothesCount.textContent === '0'){
-            comment.textContent = "EMPTY! Need to order this product."
+            comment.textContent = "EMPTY!"
             comment.style.color = 'red'
         } else {
             comment.textContent = 'Ok'

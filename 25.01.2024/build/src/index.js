@@ -23,7 +23,7 @@
 */
 // import { Size, Clothes, PriceMark } from './types'
 // import { CardComponent } from './CardComponent'
-// import './stickPrice'
+// import 'stickPrice'
 // import {stickPrice} from './stickPrice'
 var Size;
 (function (Size) {
@@ -254,7 +254,7 @@ const CardComponent = (data, parent) => {
         clothesPrice.textContent = `${item.price}`;
         clothesCount.textContent = `${item.count}`;
         if (clothesCount.textContent === '0') {
-            comment.textContent = "EMPTY! Need to order this product.";
+            comment.textContent = "EMPTY!";
             comment.style.color = 'red';
         }
         else {
